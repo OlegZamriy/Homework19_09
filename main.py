@@ -1,9 +1,8 @@
-month_number = int(input("Введіть номер місяця (1-12): "))
+number = float(input("Введіть число: "))
 
-
-months = [ "січень", "лютий", "березень", "квітень", "травень", "червень", "липень", "серпень", "вересень", "жовтень", "листопад", "грудень"]
-
-if 1 <= month_number <= 12:
-    print(f"Місяць з номером {month_number}: {months[month_number - 1]}")
+if number > 0:
+    print("Number is positive")
+elif number < 0:
+    print("Number is negative")
 else:
-    print("Некоректний ввід. Введіть номер місяця від 1 до 12.")
+    print("Number is equal to zero")
