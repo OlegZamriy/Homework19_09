@@ -1,8 +1,11 @@
-number = float(input("Введіть число: "))
 
-if number > 0:
-    print("Number is positive")
-elif number < 0:
-    print("Number is negative")
+number1 = float(input("Введіть перше число: "))
+number2 = float(input("Введіть друге число: "))
+
+if number1 == number2:
+    print("Числа рівні.")
 else:
-    print("Number is equal to zero")
+    if number1 < number2:
+        print(f"Числа у порядку зростання: {number1}, {number2}")
+    else:
+        print(f"Числа у порядку зростання: {number2}, {number1}")
